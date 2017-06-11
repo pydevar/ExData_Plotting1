@@ -16,7 +16,7 @@ data$DateTime <- strptime(paste(data$Date, data$Time), "%d/%m/%Y %H:%M:%S")
 
 # save the plot
 png("plot3.png")
-plot(data$DateTime, data$Sub_metering_1, type='l', xlab='', ylab='Global Active Power (kilowatts)')
+plot(data$DateTime, data$Sub_metering_1, type='l', xlab='', ylab='Energy sub metering')
 lines(data$DateTime ,data$Sub_metering_2 ,col="red")
 lines(data$DateTime ,data$Sub_metering_3 ,col="blue")
 legend("topright", pch=1, col=c('black', 'red', 'blue'), legend=c('Sub_metering_1', 'Sub_metering_2', 'Sub_metering_3'), lwd=3, lty=1)
