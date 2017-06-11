@@ -16,5 +16,5 @@ data$DateTime <- strptime(paste(data$Date, data$Time), "%d/%m/%Y %H:%M:%S")
 
 # save the plot
 png("plot1.png")
-hist(data$Global_active_power, col='red', xlab='Global Active Power (kilowatts)')
+hist(data$Global_active_power, col='red', main="Global Active Power", xlab='Global Active Power (kilowatts)')
 dev.off()
